@@ -4,7 +4,7 @@ Use koa to quickly build the basic template and use it immediately.
 Has fast koa-router, user authentication(jwt), ORM（sequelize） , pm2 deploy and so on.
 Continually updated...
 
-[中文介绍](//README.zh_CN.md) 
+[中文介绍](https://github.com/csd998aaa/koa-server-template/blob/master/README.zh_CN.md) 
 
 # Dependencies
 
