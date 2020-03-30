@@ -1,0 +1,31 @@
+{
+  "name": "koa-server-template",
+  "version": "1.0.0",
+  "description": "One quick build Koa server basic template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "export NODE_ENV='development' && node app.js",
+    "prod": "pm2 start pm2.config.js --only prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csd998aaa/koa-server-template.git"
+  },
+  "author": "csd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csd998aaa/koa-server-template/issues"
+  },
+  "homepage": "https://github.com/csd998aaa/koa-server-template#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-jwt": "^3.6.0",
+    "koa-router": "^8.0.8",
+    "koa-sequelize-pool": "^1.0.2",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.1",
+    "mysql2": "^2.1.0"
+  }
+}

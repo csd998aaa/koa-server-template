@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜题邦 - Sotibang</title>
+    <link rel="stylesheet" href="https://www.layuicdn.com/layui-v2.5.6/css/layui.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/bluebird.min.js"></script>
+    <script src="https://www.layuicdn.com/layui-v2.5.6/layui.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_wrap">
+            <div class="header_wrap_logo"><a href="/">搜题邦</a></div>
+            <div class="header_wrap_login" >
+                <div id="js-login-box" class="login_btn" style="display: block;">
+                    <button id="js-login" class="layui-btn layui-btn-radius layui-btn-normal">登录</button>
+                    <button id="js-signup" class="layui-btn layui-btn-radius layui-btn-danger">注册</button>
+                </div>
+                <div id="js-userinfo-box" class="login_user" style="display: none;">
+                    <img src="./image/logo.jpg" alt="logo">
+                    <p>欢迎你，<text id="js-nickname-box">admin</text></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="content">
+
+        <div class="search">
+            <input id="js-search-input" type="text" name="title" required lay-verify="required"
+                placeholder="请输入题目连续6个字以上" autocomplete="off" class="layui-input">
+            <button id="js-search-btn" class="layui-btn ">搜索</button>
+        </div>
+
+        <div class="result">
+            <table id="js-result" class="layui-table" lay-even lay-skin="nob" lay-size="lg">
+                <!-- <thead>
+                    <tr>
+                        <th>题目</th>
+                        <th>答案</th>
+                        <th>课本</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tbody> -->
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_wrap">
+            <p>v1.0.0</p>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
